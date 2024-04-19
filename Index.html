@@ -1,6 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunicado 17-04-2024</title>
+<style>
+    /* Estilos para el contenedor del documento emergente */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* Estilos para el contenido del documento emergente */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    /* Estilos para el botón de cerrar */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    /* Estilos para el botón de cerrar al pasar el cursor */
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Contenido del documento emergente -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!-- Incrustar documento de Word desde Google Drive (solo lectura) -->
+        <iframe src="https://drive.google.com/file/d/1PQX8tc4iC_LlFPhxgjmNXZm4k3X8Awez/preview" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar el documento emergente al cargar la página
+    window.onload = function() {
+        document.getElementById('myModal').style.display = 'block';
+    };
+
+    // Función para cerrar el documento emergente
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
+
+
+
+
+<script>
+    // Función para mostrar el documento emergente al cargar la página
+    window.onload = function() {
+        document.getElementById('myModal').style.display = 'block';
+    };
+
+    // Función para cerrar el documento emergente
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
+
+<!-- Tu otro script de la página web -->
+
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONVOCATORIAS CAS 2024</title>
@@ -149,7 +235,7 @@
     <div class="buttons-container">
         <a class="button" href="https://drive.google.com/file/d/1LO0PUgzZnF0jCuxEGDYFi0V38d5M0h5_/view?usp=sharing" target="_blank">INSTRUCCIONES</a>
         <a class="button" href="https://drive.google.com/file/d/1rvaGKgeXJatqBtia4oZG50QPw-yvSZOn/view?usp=sharing" target="_blank">COMUNICADO (15/04/2024)</a>
-        <a class="button" href="https://drive.google.com/file/d/1PQX8tc4iC_LlFPhxgjmNXZm4k3X8Awez/view?usp=sharing" target="_blank">COMUNICADO (17/04/2024)</a>
+        <a class="button" href="https://docs.google.com/document/d/1QUGgGbkgrsUUf4T3gXN7n-E539FtBJd4/edit?usp=sharing&ouid=117574081726592272678&rtpof=true&sd=true" target="_blank">COMUNICADO (17/04/2024)</a>
     </div>
 
     <!-- Subtítulo -->
@@ -525,6 +611,7 @@
     <footer>
         <img src="Pie_de_pagina.png" alt="Pie de página">
     </footer>
+
 </body>
 </html>
 
